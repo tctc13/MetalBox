@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320D7351E7D415AE7071FD92 /* Pods_MetalBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAC08346A7524FD320014B9 /* Pods_MetalBox.framework */; };
+		3BC3FB1041E0CD360949D478 /* Pods_MetalBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599B9065CC0B22B6E44A9632 /* Pods_MetalBoxTests.framework */; };
+		48AC31BBA75D7105A4730C50 /* Pods_MetalBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9D43694EB61131A7F20E6 /* Pods_MetalBoxUITests.framework */; };
+		651317D522C107DA00F45354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651317D422C107DA00F45354 /* AppDelegate.swift */; };
+		651317D722C107DA00F45354 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651317D622C107DA00F45354 /* TopViewController.swift */; };
+		651317DA22C107DA00F45354 /* TopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651317D822C107DA00F45354 /* TopViewController.storyboard */; };
+		651317DC22C107DE00F45354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651317DB22C107DE00F45354 /* Assets.xcassets */; };
+		651317DF22C107DE00F45354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651317DD22C107DE00F45354 /* LaunchScreen.storyboard */; };
+		651317EA22C107DF00F45354 /* MetalBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651317E922C107DF00F45354 /* MetalBoxTests.swift */; };
+		651317F522C107DF00F45354 /* MetalBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651317F422C107DF00F45354 /* MetalBoxUITests.swift */; };
+		6513180322C10AA000F45354 /* MetalCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513180222C10AA000F45354 /* MetalCanvasViewController.swift */; };
+		6513180522C10ABC00F45354 /* MetalCanvasViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6513180422C10ABC00F45354 /* MetalCanvasViewController.storyboard */; };
+		6513180722C10B6E00F45354 /* MetalCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513180622C10B6E00F45354 /* MetalCanvasView.swift */; };
+		6513180D22C1169A00F45354 /* test_dia.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 6513180B22C1169A00F45354 /* test_dia.mtl */; };
+		6513180E22C1169A00F45354 /* test_dia.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6513180C22C1169A00F45354 /* test_dia.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		651317E622C107DF00F45354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651317C922C107DA00F45354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651317D022C107DA00F45354;
+			remoteInfo = MetalBox;
+		};
+		651317F122C107DF00F45354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651317C922C107DA00F45354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651317D022C107DA00F45354;
+			remoteInfo = MetalBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035E89D0663F5191B64128C8 /* Pods-MetalBoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBoxUITests.release.xcconfig"; path = "Target Support Files/Pods-MetalBoxUITests/Pods-MetalBoxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14D9D43694EB61131A7F20E6 /* Pods_MetalBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetalBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A73762BC661E43147089526 /* Pods-MetalBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBox.debug.xcconfig"; path = "Target Support Files/Pods-MetalBox/Pods-MetalBox.debug.xcconfig"; sourceTree = "<group>"; };
+		41C3658A69944B65AD4B3F48 /* Pods-MetalBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-MetalBoxUITests/Pods-MetalBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B78C5C51663B2283455199F /* Pods-MetalBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBox.release.xcconfig"; path = "Target Support Files/Pods-MetalBox/Pods-MetalBox.release.xcconfig"; sourceTree = "<group>"; };
+		599B9065CC0B22B6E44A9632 /* Pods_MetalBoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetalBoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		651317D122C107DA00F45354 /* MetalBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		651317D422C107DA00F45354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		651317D622C107DA00F45354 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		651317D922C107DA00F45354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TopViewController.storyboard; sourceTree = "<group>"; };
+		651317DB22C107DE00F45354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651317DE22C107DE00F45354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		651317E022C107DE00F45354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651317E522C107DF00F45354 /* MetalBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		651317E922C107DF00F45354 /* MetalBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalBoxTests.swift; sourceTree = "<group>"; };
+		651317EB22C107DF00F45354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651317F022C107DF00F45354 /* MetalBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		651317F422C107DF00F45354 /* MetalBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalBoxUITests.swift; sourceTree = "<group>"; };
+		651317F622C107DF00F45354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6513180222C10AA000F45354 /* MetalCanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCanvasViewController.swift; sourceTree = "<group>"; };
+		6513180422C10ABC00F45354 /* MetalCanvasViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MetalCanvasViewController.storyboard; sourceTree = "<group>"; };
+		6513180622C10B6E00F45354 /* MetalCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCanvasView.swift; sourceTree = "<group>"; };
+		6513180B22C1169A00F45354 /* test_dia.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_dia.mtl; sourceTree = "<group>"; };
+		6513180C22C1169A00F45354 /* test_dia.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_dia.obj; sourceTree = "<group>"; };
+		7BAC08346A7524FD320014B9 /* Pods_MetalBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetalBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C63EF4158642A64AE04F0C6 /* Pods-MetalBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-MetalBoxTests/Pods-MetalBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A71302402F9716E05B96FE68 /* Pods-MetalBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetalBoxTests.release.xcconfig"; path = "Target Support Files/Pods-MetalBoxTests/Pods-MetalBoxTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		651317CE22C107DA00F45354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320D7351E7D415AE7071FD92 /* Pods_MetalBox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317E222C107DF00F45354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC3FB1041E0CD360949D478 /* Pods_MetalBoxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317ED22C107DF00F45354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AC31BBA75D7105A4730C50 /* Pods_MetalBoxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651317C822C107DA00F45354 = {
+			isa = PBXGroup;
+			children = (
+				651317D322C107DA00F45354 /* MetalBox */,
+				651317E822C107DF00F45354 /* MetalBoxTests */,
+				651317F322C107DF00F45354 /* MetalBoxUITests */,
+				651317D222C107DA00F45354 /* Products */,
+				79C653601ECE4444EDD712BA /* Pods */,
+				7C3EF26583297F035CB21943 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		651317D222C107DA00F45354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				651317D122C107DA00F45354 /* MetalBox.app */,
+				651317E522C107DF00F45354 /* MetalBoxTests.xctest */,
+				651317F022C107DF00F45354 /* MetalBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651317D322C107DA00F45354 /* MetalBox */ = {
+			isa = PBXGroup;
+			children = (
+				6513180A22C1167300F45354 /* Resources */,
+				651317D422C107DA00F45354 /* AppDelegate.swift */,
+				651317D622C107DA00F45354 /* TopViewController.swift */,
+				651317D822C107DA00F45354 /* TopViewController.storyboard */,
+				651317DB22C107DE00F45354 /* Assets.xcassets */,
+				651317DD22C107DE00F45354 /* LaunchScreen.storyboard */,
+				651317E022C107DE00F45354 /* Info.plist */,
+				6513180222C10AA000F45354 /* MetalCanvasViewController.swift */,
+				6513180422C10ABC00F45354 /* MetalCanvasViewController.storyboard */,
+				6513180622C10B6E00F45354 /* MetalCanvasView.swift */,
+			);
+			path = MetalBox;
+			sourceTree = "<group>";
+		};
+		651317E822C107DF00F45354 /* MetalBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				651317E922C107DF00F45354 /* MetalBoxTests.swift */,
+				651317EB22C107DF00F45354 /* Info.plist */,
+			);
+			path = MetalBoxTests;
+			sourceTree = "<group>";
+		};
+		651317F322C107DF00F45354 /* MetalBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				651317F422C107DF00F45354 /* MetalBoxUITests.swift */,
+				651317F622C107DF00F45354 /* Info.plist */,
+			);
+			path = MetalBoxUITests;
+			sourceTree = "<group>";
+		};
+		6513180A22C1167300F45354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6513180B22C1169A00F45354 /* test_dia.mtl */,
+				6513180C22C1169A00F45354 /* test_dia.obj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79C653601ECE4444EDD712BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A73762BC661E43147089526 /* Pods-MetalBox.debug.xcconfig */,
+				4B78C5C51663B2283455199F /* Pods-MetalBox.release.xcconfig */,
+				8C63EF4158642A64AE04F0C6 /* Pods-MetalBoxTests.debug.xcconfig */,
+				A71302402F9716E05B96FE68 /* Pods-MetalBoxTests.release.xcconfig */,
+				41C3658A69944B65AD4B3F48 /* Pods-MetalBoxUITests.debug.xcconfig */,
+				035E89D0663F5191B64128C8 /* Pods-MetalBoxUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C3EF26583297F035CB21943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC08346A7524FD320014B9 /* Pods_MetalBox.framework */,
+				599B9065CC0B22B6E44A9632 /* Pods_MetalBoxTests.framework */,
+				14D9D43694EB61131A7F20E6 /* Pods_MetalBoxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		651317D022C107DA00F45354 /* MetalBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651317F922C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBox" */;
+			buildPhases = (
+				0B9B006053B7463059622800 /* [CP] Check Pods Manifest.lock */,
+				651317CD22C107DA00F45354 /* Sources */,
+				651317CE22C107DA00F45354 /* Frameworks */,
+				651317CF22C107DA00F45354 /* Resources */,
+				138A0480C7C6937FE8E11440 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalBox;
+			productName = MetalBox;
+			productReference = 651317D122C107DA00F45354 /* MetalBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		651317E422C107DF00F45354 /* MetalBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651317FC22C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBoxTests" */;
+			buildPhases = (
+				0F823300643BB65413F63E8E /* [CP] Check Pods Manifest.lock */,
+				651317E122C107DF00F45354 /* Sources */,
+				651317E222C107DF00F45354 /* Frameworks */,
+				651317E322C107DF00F45354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651317E722C107DF00F45354 /* PBXTargetDependency */,
+			);
+			name = MetalBoxTests;
+			productName = MetalBoxTests;
+			productReference = 651317E522C107DF00F45354 /* MetalBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		651317EF22C107DF00F45354 /* MetalBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651317FF22C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBoxUITests" */;
+			buildPhases = (
+				6EFFEFAC5A739B2547EBF4CE /* [CP] Check Pods Manifest.lock */,
+				651317EC22C107DF00F45354 /* Sources */,
+				651317ED22C107DF00F45354 /* Frameworks */,
+				651317EE22C107DF00F45354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651317F222C107DF00F45354 /* PBXTargetDependency */,
+			);
+			name = MetalBoxUITests;
+			productName = MetalBoxUITests;
+			productReference = 651317F022C107DF00F45354 /* MetalBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651317C922C107DA00F45354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = TCTC;
+				TargetAttributes = {
+					651317D022C107DA00F45354 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					651317E422C107DF00F45354 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 651317D022C107DA00F45354;
+					};
+					651317EF22C107DF00F45354 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 651317D022C107DA00F45354;
+					};
+				};
+			};
+			buildConfigurationList = 651317CC22C107DA00F45354 /* Build configuration list for PBXProject "MetalBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 651317C822C107DA00F45354;
+			productRefGroup = 651317D222C107DA00F45354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651317D022C107DA00F45354 /* MetalBox */,
+				651317E422C107DF00F45354 /* MetalBoxTests */,
+				651317EF22C107DF00F45354 /* MetalBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651317CF22C107DA00F45354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651317DF22C107DE00F45354 /* LaunchScreen.storyboard in Resources */,
+				6513180522C10ABC00F45354 /* MetalCanvasViewController.storyboard in Resources */,
+				6513180D22C1169A00F45354 /* test_dia.mtl in Resources */,
+				651317DC22C107DE00F45354 /* Assets.xcassets in Resources */,
+				6513180E22C1169A00F45354 /* test_dia.obj in Resources */,
+				651317DA22C107DA00F45354 /* TopViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317E322C107DF00F45354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317EE22C107DF00F45354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B9B006053B7463059622800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetalBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F823300643BB65413F63E8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetalBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		138A0480C7C6937FE8E11440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetalBox/Pods-MetalBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetalBox/Pods-MetalBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetalBox/Pods-MetalBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFFEFAC5A739B2547EBF4CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetalBoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		651317CD22C107DA00F45354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6513180322C10AA000F45354 /* MetalCanvasViewController.swift in Sources */,
+				651317D722C107DA00F45354 /* TopViewController.swift in Sources */,
+				6513180722C10B6E00F45354 /* MetalCanvasView.swift in Sources */,
+				651317D522C107DA00F45354 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317E122C107DF00F45354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651317EA22C107DF00F45354 /* MetalBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651317EC22C107DF00F45354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651317F522C107DF00F45354 /* MetalBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		651317E722C107DF00F45354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651317D022C107DA00F45354 /* MetalBox */;
+			targetProxy = 651317E622C107DF00F45354 /* PBXContainerItemProxy */;
+		};
+		651317F222C107DF00F45354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651317D022C107DA00F45354 /* MetalBox */;
+			targetProxy = 651317F122C107DF00F45354 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		651317D822C107DA00F45354 /* TopViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651317D922C107DA00F45354 /* Base */,
+			);
+			name = TopViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		651317DD22C107DE00F45354 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651317DE22C107DE00F45354 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		651317F722C107DF00F45354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		651317F822C107DF00F45354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		651317FA22C107DF00F45354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A73762BC661E43147089526 /* Pods-MetalBox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KLPG9KA92W;
+				INFOPLIST_FILE = MetalBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = alldevelopment;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		651317FB22C107DF00F45354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B78C5C51663B2283455199F /* Pods-MetalBox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MetalBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		651317FD22C107DF00F45354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C63EF4158642A64AE04F0C6 /* Pods-MetalBoxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLPG9KA92W;
+				INFOPLIST_FILE = MetalBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox.MetalBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetalBox.app/MetalBox";
+			};
+			name = Debug;
+		};
+		651317FE22C107DF00F45354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71302402F9716E05B96FE68 /* Pods-MetalBoxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLPG9KA92W;
+				INFOPLIST_FILE = MetalBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox.MetalBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetalBox.app/MetalBox";
+			};
+			name = Release;
+		};
+		6513180022C107DF00F45354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C3658A69944B65AD4B3F48 /* Pods-MetalBoxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLPG9KA92W;
+				INFOPLIST_FILE = MetalBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox.MetalBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetalBox;
+			};
+			name = Debug;
+		};
+		6513180122C107DF00F45354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035E89D0663F5191B64128C8 /* Pods-MetalBoxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLPG9KA92W;
+				INFOPLIST_FILE = MetalBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tctc.metalbox.MetalBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetalBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		651317CC22C107DA00F45354 /* Build configuration list for PBXProject "MetalBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651317F722C107DF00F45354 /* Debug */,
+				651317F822C107DF00F45354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651317F922C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651317FA22C107DF00F45354 /* Debug */,
+				651317FB22C107DF00F45354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651317FC22C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651317FD22C107DF00F45354 /* Debug */,
+				651317FE22C107DF00F45354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651317FF22C107DF00F45354 /* Build configuration list for PBXNativeTarget "MetalBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6513180022C107DF00F45354 /* Debug */,
+				6513180122C107DF00F45354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 651317C922C107DA00F45354 /* Project object */;
+}
